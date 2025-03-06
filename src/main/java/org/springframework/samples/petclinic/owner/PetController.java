@@ -89,7 +89,7 @@ class PetController {
 		dataBinder.setValidator(new PetValidator());
 	}
 
-	@GetMapping("/pets/new")
+	@GetMapping("/pets/new/pet")
 	public String initCreationForm(Owner owner, ModelMap model) {
 		Pet pet = new Pet();
 		owner.addPet(pet);
