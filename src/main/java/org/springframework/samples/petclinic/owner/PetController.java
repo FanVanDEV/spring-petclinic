@@ -75,7 +75,7 @@ class PetController {
 
 		Optional<Owner> optionalOwner = this.owners.findById(ownerId);
 		Owner owner = optionalOwner.orElseThrow(() -> new IllegalArgumentException(
-				"Owner not found:  Please ensure the ID is correct "));
+				"what?"));
 		return owner.getPet(petId);
 	}
 
