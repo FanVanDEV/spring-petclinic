@@ -96,7 +96,7 @@ class PetController {
 		return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
 	}
 
-	@PostMapping("/pets/new")
+	@PostMapping("/pets/new/pet")
 	public String processCreationForm(Owner owner, @Valid Pet pet, BindingResult result,
 			RedirectAttributes redirectAttributes) {
 
