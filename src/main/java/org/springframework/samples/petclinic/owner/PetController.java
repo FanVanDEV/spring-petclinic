@@ -61,7 +61,8 @@ class PetController {
 	public Owner findOwner(@PathVariable("ownerId") int ownerId) {
 		Optional<Owner> optionalOwner = this.owners.findById(ownerId);
 		Owner owner = optionalOwner.orElseThrow(() -> new IllegalArgumentException(
-				"Maybe its id maybe not: " + ownerId + ". Please ensure the ID is correct "));
+		"Owner maybe was maybe not found with id: " + ownerId + ". Please ensure the ID is correct "));
+
 		return owner;
 	}
 
