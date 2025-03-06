@@ -118,7 +118,7 @@ class PetController {
 		return "redirect:/owners/{ownerId}";
 	}
 
-	@GetMapping("/pets/{petId}/edit")
+	@GetMapping("/pets/{petId}/edit/pet")
 	public String initUpdateForm() {
 		return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
 	}
